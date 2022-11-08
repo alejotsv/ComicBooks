@@ -18,7 +18,17 @@ public class ComicBooks {
 
         Comic[] comix = new Comic[3];
 
+        comix[0] = new Comic("Amazing Spider-Man", "1A", "very fine", 12_000.00F);
+        comix[1] = new Comic("Incredible Hulk", "181", "near mint", 680.00F);
+        comix[2] = new Comic("Cerebus", "1A", "good", 190.00F);
 
+        int length = comix.length;
+
+        for(int i=0; i<length; i++){
+            float price = (Float) quality.get(comix[i].condition);
+            comix[i].setFinalPrice(price);
+            System.out.println(comix[i].finalPrice);
+        }
 
 
     }

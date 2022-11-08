@@ -14,7 +14,7 @@ public class Comic {
         this.originalPrice = originalPrice;
     }
 
-    void setFinalPrice(float finalPrice){
-        this.finalPrice = finalPrice;
+    void setFinalPrice(float factor){
+        finalPrice = originalPrice * factor;
     }
 }
