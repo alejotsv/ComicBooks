@@ -27,7 +27,11 @@ public class ComicBooks {
         for(int i=0; i<length; i++){
             float price = (Float) quality.get(comix[i].condition);
             comix[i].setFinalPrice(price);
-            System.out.println(comix[i].finalPrice);
+            System.out.println("Title: " + comix[i].title);
+            System.out.println("Issue number: " + comix[i].issue);
+            System.out.println("Condition: " + comix[i].condition);
+            System.out.println("Price: " + comix[i].finalPrice);
+            System.out.println("-------------------------");
         }
 
 
