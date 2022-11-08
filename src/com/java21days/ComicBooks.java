@@ -16,6 +16,11 @@ public class ComicBooks {
             quality.put(condition[i], prices[i]);
         }
 
+        Comic[] comix = new Comic[3];
+
+
+
+
     }
 
 }
